@@ -20,3 +20,10 @@
 // Control Structures: Manage the flow of execution (e.g., if, else, for, while). 
 // Functions: Reusable blocks of code that perform specific tasks. 
 // Comments: Used to explain the code; ignored by the compiler. 
+
+
+#include <stdio.h>
+int main(){
+    printf("this is hellow world");
+    return 0;
+}
