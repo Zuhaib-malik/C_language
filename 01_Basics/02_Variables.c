@@ -1,7 +1,7 @@
 
 /*
 ==========================
-📌 Variables in C Language
+ Variables in C Language
 ==========================
 
 Variable is like a container in which we can store data and then can use them.
@@ -32,7 +32,7 @@ void main()
 
 /*
 ====================================
-📝 Notes: Variables in C
+Notes: Variables in C
 ====================================
 
 Naming Rules:
