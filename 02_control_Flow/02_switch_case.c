@@ -1,5 +1,5 @@
 /*
-The switch statement in C is a control flow statement that allows for multi-way branching based on the value of an expression. It provides an efficient way to execute different blocks of code depending on a single variable or expression's value, serving as an alternative to a series of if-else if-else statements.
+The switch statement is a control flow statement that allows for multi-way branching based on the value of an expression. It provides an efficient way to execute different blocks of code depending on a single variable or expression's value, serving as an alternative to a series of if-else if-else statements.
 
 
 Syntax:
