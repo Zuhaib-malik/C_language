@@ -31,15 +31,15 @@ Here’s a checklist of topics I’m working through and updating as I go:
 - [x] Conditional Statements (`if`, `else`, `switch`)  
 - [x] Loops (`for`, `while`, `do-while`)  
 - [x] Functions  
-- [ ] Arrays & Strings  
-- [ ] Pointers  
-- [ ] Storage Classes  
-- [ ] Recursion  
+- [x] Arrays & Strings  
+- [x] Pointers  
+- [x] Storage Classes  
+- [x] Recursion  
 
 ### 🧱 Intermediate Topics
-- [ ] Structures & Unions  
-- [ ] File Handling  
-- [ ] Dynamic Memory Allocation (`malloc`, `calloc`, `free`)  
+- [x] Structures & Unions  
+- [x] File Handling  
+- [x] Dynamic Memory Allocation (`malloc`, `calloc`, `free`)  
 - [ ] Header Files & Preprocessors  
 - [ ] Command Line Arguments  
 
