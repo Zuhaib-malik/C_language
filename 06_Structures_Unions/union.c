@@ -16,6 +16,37 @@ Unions are a special data type in C that allow storing different data types in t
                 data_type member2;
                 // ... more members
             };
+
+        Unions vs Structures:
+            Unions:
+
+                Share memory between members (only one active at a time)
+                Size = largest member
+                Used for storing different types at different times
+                Pitfalls: Overwriting data, no active member tracking, uninitialized use risks
+
+            Structures:
+
+                Each member has separate memory
+                Size = sum of all members (+ padding)
+                Used for grouping related data together
+                All members can be used simultaneously
+                Unions save memory but require careful handling, while structures are safer but use more memory.
+
+    Common Pitfalls:
+            Only one member can be used at a time (others get overwritten).
+            No way to track which member is currently active (must manage manually).
+            Uninitialized unions can lead to undefined behavior.
+
+
+
+    Conclusion:
+        Unions are useful when:
+            ✅ You need memory efficiency (e.g., embedded systems).
+            ✅ You want to interpret data in multiple ways (type punning).
+            ✅ You work with protocols or hardware registers.
+
+            However, they require careful handling to avoid data corruption.
 */
 #include <stdio.h>
 #include <string.h>  // Needed for strcpy()
