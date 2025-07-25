@@ -1,0 +1,5 @@
+This is a line written by fprintf.
+This is a line written by fputs.
+A
+Binary data example
+This line was appended.
