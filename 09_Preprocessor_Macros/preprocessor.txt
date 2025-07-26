@@ -1,0 +1,23 @@
+The C preprocessor is a program that processes the source code before it is passed to the compiler. It is a text substitution tool that performs various operations based on "preprocessor directives," which are lines in the program that begin with a # symbol. 
+
+    Key functions of the C preprocessor:
+
+        Macro Expansion:
+            Macros are defined using the #define directive. They are essentially abbreviations for code snippets or values. The preprocessor replaces every occurrence of a defined macro with its corresponding definition during the preprocessing phase. Macros can be simple value substitutions (e.g., #define PI 3.14159) or function-like macros with arguments (e.g., #define AREA(r) (PI * r * r)).
+
+        File Inclusion:
+
+            The #include directive instructs the preprocessor to insert the entire content of a specified header file into the current source file. This is crucial for incorporating standard library functions and user-defined declarations.
+        
+        Conditional Compilation:
+
+            Directives like #ifdef, #ifndef, #if, #else, and #endif allow programmers to include or exclude specific blocks of code based on certain conditions, such as whether a macro is defined or a particular expression evaluates to true. This enables building different versions of a program from the same source code.
+
+        Other Directives:
+
+            Other less common directives include #undef (to undefine a macro) and #pragma (for compiler-specific instructions).
+
+        
+    In essence, the preprocessor transforms the original C source file into an expanded form, which is then passed to the C compiler for compilation into object code.
+
+

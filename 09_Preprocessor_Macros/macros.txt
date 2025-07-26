@@ -1,0 +1,51 @@
+Macros in C are preprocessor directives that allow for code substitution and abstraction before the actual compilation process begins. They are defined using the #define keyword.
+
+    Key aspects of macros in C:
+
+        Preprocessor Directives:
+
+            Macros are processed by the C preprocessor, a program that runs before the compiler. This means the macro's definition is substituted into the code wherever the macro name appears, essentially performing a text-based replacement.
+
+        Definition:
+
+            Macros are defined using the syntax: #define MACRO_NAME MACRO_VALUE.
+            MACRO_NAME is the symbolic name given to the macro.
+            MACRO_VALUE is the code snippet or value that will replace MACRO_NAME.
+            Macros do not end with a semicolon.
+
+        Types of Macros:
+
+            Object-like macros: These resemble data objects and are typically used to define constants or simple values.
+                Example:
+                        #define PI 3.14159
+                        #define MAX_SIZE 100
+
+            Function-like macros: These resemble function calls and can take arguments, allowing for more complex code substitutions.
+                Example
+                    #define SQUARE(x) ((x) * (x))
+                    #define ADD(a, b) ((a) + (b))
+
+        It is crucial to use parentheses around arguments in function-like macros to avoid unexpected behavior due to operator precedence.
+
+            Benefits:
+                Code Reusability: Define a piece of code once and use it multiple times throughout the program.
+                Readability and Maintainability: Replace complex expressions with meaningful names, improving code clarity.
+                Performance: Can avoid function call overhead as they are expanded in-line by the preprocessor.
+                Conditional Compilation: Used with #ifdef, #ifndef, #if, #else, and #endif to include or exclude code blocks based on macro definitions.
+
+                Limitations and Potential Issues:
+
+                    Debugging Challenges: Since macros are expanded before compilation, debugging tools might not show the expanded code, making it harder to track issues.
+
+                Side Effects with Arguments: Function-like macros can lead to unexpected behavior if arguments with side effects (e.g., ++x) are used, as the argument might be evaluated multiple times.
+                Lack of Type Checking: Unlike functions, macros do not perform type checking, which can lead to subtle errors.
+
+
+        Predefined Macros:
+        
+            C provides several predefined macros that offer information about the compilation process, 
+            such as __FILE__, __LINE__, __DATE__, and __TIME__.
+
+        Undefining Macros:
+
+            The #undef directive can be used to remove a previously defined macro, allowing its name to be redefined or left undefined.
